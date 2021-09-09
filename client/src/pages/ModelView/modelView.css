@@ -1,0 +1,16 @@
+.modelContainer{
+    display: flex;
+    width: 100%;
+}
+
+.container{
+  margin-top:10px;
+}
+
+model-viewer{
+  margin-top:10px;
+  width: 85vw;
+  height:90vh;
+  position: fixed;
+  bottom: 0;
+}

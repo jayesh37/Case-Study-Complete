@@ -1,0 +1,101 @@
+*{
+  margin: 0;
+}
+
+.sidebar {
+  width: 200px;
+  height: 100vh;
+  background-color:white;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: scroll;
+  position: sticky;
+  top: 60px;
+}
+
+.sidebar-center
+{
+  display: flex;
+  align-items: center;
+  width: 80%;
+  border-bottom: 1px solid #4b4b4b;
+  padding: 10px 0;
+  margin-bottom: 10px;
+}
+
+.sidebar-center {
+  padding: 0;
+  padding-top: 20px;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+.logo {
+  font-size: 24px;
+  margin-right: 10px;
+  cursor: pointer;
+  padding-left: 10px;
+}
+
+.brand {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+}
+
+.list-item {
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.list-item-icon {
+  width: 30px;
+  font-size: 20px;
+}
+
+.list-item.active,
+.list-item:hover {
+  background-color: #de5246;
+  color: white;
+}
+
+.color-box {
+  width: 20px;
+  height: 20px;
+  border-radius: 5px;
+  border: 1px solid #9ca3af;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+footer{
+  padding: 10px;
+  color: rgb(139, 139, 139);
+  font-size: 15px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+}
+
+@media only screen and (max-width: 768px) {
+  .sidebar {
+    width: 50px;
+  }
+  .brand,
+  .list-item-text,footer {
+    display: none;
+  }
+}
